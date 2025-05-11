@@ -17,7 +17,7 @@ public class DataPersistance2 implements DataAccessLayer {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			String url = "jdbc:mysql://localhost:3306/customers";
-			Connection con = DriverManager.getConnection("url","root","9ppropvl8");
+			Connection con = DriverManager.getConnection(url,"root","9ppropvl8");
 			
 			String query ="insert into studentinfo value(?,?)";
 			PreparedStatement pstmt = con.prepareStatement(query);
