@@ -18,6 +18,9 @@ public class Servlet2 extends HttpServlet {
 		String studentname=request.getParameter("studentName");
 		String email=request.getParameter("email");
 		
+		BuisnessLayer1 bl1 = new BuisnessLayer1();
+		bl1.insert(studentname, email);
+		
 		response.sendRedirect("Res2.html");
 					
 	}
@@ -28,3 +31,4 @@ public class Servlet2 extends HttpServlet {
 	}
 
 }
+
