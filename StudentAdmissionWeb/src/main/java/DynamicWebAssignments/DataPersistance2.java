@@ -25,7 +25,7 @@ public class DataPersistance2 implements DataAccessLayer {
 			pstmt.setString(1, studentname);
 			pstmt.setString(2, email);
 			
-			pstmt.executeQuery();  
+			pstmt.executeUpdate();  
 			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
